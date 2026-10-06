@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+    font-family: 'DejaVu Sans', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://d2pn8kiwq2w21t.cloudfront.net/images/jpegPIA22662.width-1600.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed */
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.name-box {
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly opaque black */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    margin: 0;
+    transition: font-size 0.5s ease;
+}
+
+.hero-content p {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.hero-content p1 {
+    font-size: 1.25em;
+}
+
+.scroll-down {
+    display: inline-block;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-down:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-100%); /* Hidden above view */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sticky-name-box {
+  
+}
+
+    .sticky-name-box a {
+        color: #fff; /* White text color */
+        text-decoration: none; /* Remove underline */
+    }
+
+    .sticky-name-box a:hover {
+        text-decoration: underline; /* Optional: underline on hover */
+    }
+
+
+/* Mobile Styling */
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul.left, nav ul.right {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        gap: 10px; /* Space between links */
+    }
+
+    .sticky-name-box {
+        display: block; /* Show sticky name box */
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        box-sizing: border-box; /* Include padding in width */
+    }
+
+    .sticky-name-box h1 {
+        margin: 0;
+        font-size: 1.2em;
+    }
+
+    nav ul.left, nav ul.right {
+        gap: 10px; /* Space between items */
+    }
+
+    .hero {
+        margin-top: 60px; /* Ensure content is not hidden behind sticky header */
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul.left {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+nav ul.right {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+nav ul li {
+    margin: 0 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 10px 30px;
+    background: rgba(0, 0, 0, 0.7); /* Slightly opaque section background */
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+section h4 {
+    font-size: 1.0em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+section p {
+    font-size: 1.2em;
+}
+
+.small-text {
+    font-size: 0.8em;
+    margin: 8px auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Minimized Header on Scroll */
+.minimized .hero-content h1 {
+    font-size: 2em;
+}
+
+.minimized .name-box {
+    background-color: rgba(255, 255, 255, 0.2); /* More transparent when minimized */
+}
+
+.minimized header {
+    opacity: 1; /* Make header visible */
+    transform: translateY(0); /* Slide down into view */
+}
+/* About Me Section - Image 1 */
+.about-image-1 {
+    display: block;
+    margin: 10px 20px 20px 0; /* Adds margin around the image */
+    max-width: 30%; /* Adjust the size for the first image */
+    height: auto;
+    border-radius: 10px;
+    float: left; /* Aligns the first image to the left */
+}
+
+/* Style for the about section */
+#about {
+    padding: 20px;
+}
+
+.about-image-2 {
+    display: block;
+    margin: 10px 20px 20px 0; /* Adds margin around the image */
+    max-width: 30%; /* Adjust the size for the first image */
+    height: auto;
+    border-radius: 10px;
+    float: right;
+}
+
+
+.research-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 65%; 
+    height: auto;
+    border-radius: 10px;
+}

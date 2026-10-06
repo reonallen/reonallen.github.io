@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Reon&#39;s Research Website</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReonAllenResearchWeb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+      <div id="top"></div>
+    <div class="hero">
+        <div class="hero-content">
+            <div class="name-box">
+                <h1>Reon Allen</h1>
+                <p>He/Him</p>
+                <p>Astrophysics PhD Student</p>
+              <p1>Department of Physics and Astronomy</p1>
+              <p>Louisiana State University</p>
+                <a href="#about" class="scroll-down">Scroll Down</a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <ul class="left">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Research">Research</a></li>
+                <li><a href="#Work">Work</a></li>
+            </ul>
+        <div class="sticky-name-box">
+            <h1><a href="#top">Reon Allen</a></h1>
+        </div>
+            <ul class="right">
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="https://drive.google.com/file/d/1FdalHUycYKyO7ZJsXiWI1w_B_kQ2U4nf/view?usp=sharing">C.V.</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <img src="https://github.com/reonallen/web_images/blob/da57b82136c61c73cd35966aae67722a56bdf126/reon.jpg?raw=true" alt="Your Image Description" class="about-image-1">
+    <p>I am a hardworking, opportunity-seeking undergraduate physics student with a keen focus and research experience in stellar astrophysics and asteroseismology.</p>
+    <p>I am currently pursuing my B.S. in Physics at California State University Long Beach with a minor in Applied Statistics. I have developed a strong foundation in computational physics and will be graduating in Spring 2025.</p>
+    <p>I have gone through courses in quantum mechanics, electromagnetism, etc., inspiring more of my fascination with the complexities of physics. I am particularly drawn to stellar physics. My research is based on magnetic fields within both main sequence and red giant branch stars.</p>
+    <p>I am eager to expand my knowledge and skill sets and would love to be contacted with opportunities for internships, workshops, and conferences in the field of astrophysics.</p>
+    
+    <div class="hobbies-section">
+              <img src="https://github.com/reonallen/web_images/blob/d821dd6edda3676904cec2dd38d48f7acc2fda6c/DMKGIz1.jpeg?raw=true" alt="Your Image Description" class="about-image-2">
+        <h3>Hobbies</h3>
+        <p>Aside from academics and research, I have a vast network of hobbies and interests. I am the current president of the astronomy club at CSULB and the vice president of the Salsa Dance club. I love being able to introduce younger people and students outside of STEM to astronomy, and dancing has always been a passion of mine since I was younger.</p>
+        <p>I volunteer as a Youth Mentor with LB BLAST, where I provide one-on-one guidance to underprivileged or struggling children aged 7 to 18, with a particular focus on elementary school students. I academically motivate the students I work with while also helping them develop other valuable life skills. Working with children is a separate passion of mine; I love being able to be an integral part of a child's experience with the world.</p>
+        <p>Not necessarily a hobby, but I also love my cat, Liddle. Curling up with a good book, some tea, and my cat is a key part of my daily happiness.</p>
+
+    </div>
+</section>
+
+    <section id="Research">
+        <h2>Research</h2>
+
+        <h3>Northwestern CIERA</h3>
+        <p>Understanding a star's magnetic field is critical for stellar evolution and other defining structures within the star. The problem is there is limited data on the magnetic fields found in the core of a star. The solution we propose is using Asteroseismology.</p>
+        <p>Asteroseismology is the study of stellar interiors through oscillations (Aerts et al. 2010). Oscillations can manifest as waves within the star. Waves where buoyancy is the restoring force are known as gravity modes (g modes). G modes are sensitive to the interior of the star and are a means to understand the convection and magnetic fields near the core.</p>
+        <p>Lecoanet et al. (2022) calculated the first observed interior magnetic field strength of a main sequence star using its lack of observed low-frequency g modes. The hypothesis set forth was that the magnetic field strength in the core was strong enough at low-frequency g modes to cause the suppression. The goal of this project is to use the established method to place upper bounds on the internal magnetic field strength by: finding more stars lacking in low-frequency g modes, placing an upper bound on magnetic field strength near the core (B<sub>crit</sub>), and showing potential trends for age, mass, and B<sub>conv</sub>.</p>
+        <p>We use a data set of 37 &#611; Doradus (&#611; Dor) stars, which are stars 1.4-2 times the mass of the sun (MESA data provided by Joey Mombarg). Using Dedalus, a partial differential equation solver, we found the eigenvalues for each observed ℓ (Spherical Degree) mode at a given m (Azimuthal) mode based on the star's local radius and density where the star's Brunt-Väisälä frequency (N) is maximized (Burns et al. 2020). B<sub>crit</sub> is the field strength where there ceases to be an eigenvalue for the observed (ℓ,m) mode. Critical values were plotted against age, mass, and core-convective magnetic field values.</p>
+        <img src="https://i.imgur.com/WM93Ekw.png" alt="BcritKICID" class="research-image">
+        <p>B<sub>crit</sub> values calculated at each observed (ℓ,m) for 37 &#611; Dor stars, Kepler ID listed. A trend can be seen with the (ℓ,m)=(1,1) modes, with B<sub>crit</sub> ~ KG. The majority of stars also show their (ℓ,m)&ne;(1,1) values are greater than (ℓ,m)=(1,1).</p>
+        <img src="https://i.imgur.com/K9RWjtk.png" alt="Bcritage" class="research-image">
+        <p>We found that there was no relation between critical magnetic field strengths and the mass of these stars. However, a relation was found with the age of the stars (shown above); younger stars tended to have larger field strengths, while older stars had smaller field strengths.</p>
+        <img src="https://i.imgur.com/KGXy1jw.png" alt="HR" class="research-image">
+        <p>Results plotted on a Hertzsprung-Russell (H-R) diagram, to further observe the trends in results. We found that stars with larger field strengths rested on the lower bound of the main sequence.</p>
+        <img src="https://i.imgur.com/mkbqu2B.png" alt="BcritBconv" class="research-image">
+        <p>Convection is where hot plasma in stars rises as the cool plasma sinks to provide energy transport (Hansen et al. 2004). The magnetic field value calculated near the core is defined to be B<sub>crit</sub>, whereas B<sub>conv</sub> is the magnetic field generated within the convective region of a star's core.</p>
+        <p>As shown above, the convective magnetic field strength was consistent between all 37 &#611; Dor stars, being B<sub>conv</sub> ~ 90 KG. This does not line up with the relations we saw within the calculated B<sub>crit</sub> values. Because of this, B<sub>crit</sub> values are assumed as the upper bounds for the magnetic field strengths, but not necessarily the actual magnetic field value within the star's core.</p>
+        <p>We hope to continue placing values to the magnetic field strength of stars in our future work. Why do we want these values? We want these values because they allow for more accurate estimations of stellar life cycles and energy transport, while providing methods that can be used to calculate field strength in more stars.</p>
+  
+      <h4>References</h4>
+      <p class="small-text">Aerts, C., Christensen-Dalsgaard, J., & Kurtz, D. W. 2010,
+Asteroseismology, doi:10.1007/978-1-4020-5803-5</p>
+        <p class="small-text">Burns, K. J., Vasil, G. M., Oishi, J. S., Lecoanet, D., &
+Brown, B. P. 2020, Physical Review Research, 2, 023068</p>
+      <p class="small-text">Duguid, C. D., de Vries, N. B., Lecoanet, D., & Barker,
+        A. J. 2024, The Astrophysical Journal Letters, 966, L14.</p>
+      <p class="small-text">Hansen, C. J., Kawaler, S. D., & Trimble, V. 2004, Stellar
+Interiors: Physical Principles, Structure and Evolution,
+2nd edn., ed. Springer-Verlag</p>
+      <p class="small-text">Lecoanet, D., Bowman, D. M., & Van Reeth, T. 2022,
+Monthly Notices of the Royal Astronomical Society:
+Letters, 512, L16.</p>
+      <p class="small-text">Mombarg, J. S. G., Van Reeth, T., & Aerts, C. 2021,
+Astronomy amp; Astrophysics, 650, A58.</p>
+      <h4>Acknowledgments</h4>
+      <p class="small-text">This material is based upon work supported by the National Science Foundation under Grant No. AST2149425, a Research Experiences for Undergraduates (REU) grant awarded to CIERA at Northwestern University. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.</p>
+      
+      <p class="small-text"> Reon Allen thanks Dr. Daniel Lecoanet greatly for his support, mentorship, knowledgeable insight and opportunity to work on this thrilling project. Gratitude is also in order for Dr. Aaron Geller, Dr. Chase Kimball and Northwestern CIERA for this wonderful research opportunity. Thank you to Joey Mombarg for providing the MESA models for these stars. </p>
+        <h3>Long Beach State</h3>
+      <p>As part of my honors thesis research, I am investigating the magnetic cycles of Red Giant Branch (RGB) stars and comparing them to previously collected data for main sequence stars. Utilizing a sample of binary systems containing a red giant, I am focused on processing individual quarters of data from each star, sourced from the KASOC website.<p>
+      <p>The primary objective is to plot the Sap flux as a function of time, ensuring data cleanliness, and preparing the quarters for analysis through my professor's BAM program, ultimately extracting Numax values for each star.
+
+This ongoing research aims to understand the rotational patterns of RGB stars and the periods of their magnetic activity cycles.<p>
+      <p>By plotting the rotation of these stars and comparing them to data from main sequence stars, we seek to identify any distinctive features or differences in their magnetic behavior.
+
+The methodology involves a meticulous process of data compilation, plotting, and analysis, with a specific focus on understanding the Numax values obtained through the BAM program.<p>
+      <p>The eventual goal is to draw meaningful comparisons between RGB and main sequence stars, contributing valuable insights to the field of stellar astrophysics. This endeavor represents not only a substantial contribution to the understanding of stellar magnetic cycles but also a platform for furthering stellar astrophysics.<p>
+      <p> Research Slides: <a href="https://csulb-my.sharepoint.com/:p:/g/personal/reon_allen-sa_csulb_edu/EaPmrV5V7zBEu4qz29yQtLcBsuyIHLmR3ArtTuzNdZ70HQ?e=8rmiur" style="color: #fff;"> Magnetic Cycles of Oscillating Red Giant's in Eclipsing Binaries</a><p>
+    </section>
+  
+      <section id="Work">
+        <h2>Work Experience</h2>
+        <h3>Telescope Operator, Planetarium Assistant</h3>
+        <p>California State University Long Beach, Department of Physics and Astronomy<p>
+        <p>January 2022 - Current<p>
+        <p>As a Telescope Operator, I am tasked with the setup, disassembly, and maintenance of sophisticated Celestron CPC Starbright XLT telescopes, both 8-inch and 11-inch models. Engaging in the operation of these advanced telescopes, I actively interact with and provide educational guidance to participants during public telescope observation nights. My responsibilities include the upkeep of these instruments and the extensive knowledge for accurately locating astronomical objects in the night sky. <p>
+        <p>As a Planetarium Assistant I work with StarLab's mobile planetarium. I am skilled in set up, take down, and starry night software presenter. I work to create new shows and scripts for presentations catered to many different age groups.<p>
+        <h3>Resident Assistant</h3>
+        <p>California State University Long Beach, Department od Housing and Residental Life <p>
+        <p>August 2022 - Current<p>
+        <p>I am entrusted with creating a vibrant and supportive living environment within the dorms. My multifaceted role revolves around fostering community engagement, employing creative signage to enhance the living experience, and being a critical component in crisis intervention through a structured on-call system. I am a member of the Honors dorming community and tailor my resident's living experiences to their united goals as honors students.<p>
+    </section>
+
+    <section id="Skills">
+        <h2>Skills</h2>
+    <ul>
+        <li>Relevant Coursework:
+            <ul>
+                <li>Electricity and Magnetism I, II</li>
+                <li> Quantum Mechanics I, II</li>
+              <li>Astronautics and Space</li>
+              <li>Thermodynamics</li>
+              <li>Astrophysics</li>
+            </ul>
+        </li>
+        <li>Programming
+            <ul>
+              <li>Python</li>
+              <li>Mathematica </li>
+              <li>LATEX</li>
+              <li>Mac OS/Command Line</li>
+              <li>High Performance Clusters</li>
+                <li>HTML, CSS, JS</li>
+            </ul>
+        </li>
+        <li>Industy
+                  <ul>
+                    <li>Computational Physics</li>
+                    <li>Observational Astronomy</li>
+                    <li>Data Modeling/Analysis</li>
+                    <li>Problem Solving</li>
+                    <li>Quick Learning</li>
+            </ul>
+      </li>
+      <li>Communication
+        <ul>
+          <li>Presentation creation and Public Speaking</li>
+          <li>Conflict Resolution</li>
+          <li>Creativity and Innovation</li>
+        </ul>
+      </li>
+    </ul>
+    </section>
+  
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Reon Allen (He/Him)</p>
+      <p>E: <a href="mailto:reon.allen01@student.csulb.edu" style="color: #fff;"> reon.allen01@student.csulb.edu</a><p>
+      <p>P: 209-534-0599<p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/reonallen/" style="color: #fff;"> Reon Allen</a><p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Reon Allen. All rights reserved. Image Credit: NASA/GSFC/Solar Dynamics Observatory</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
